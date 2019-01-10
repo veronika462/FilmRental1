@@ -1,0 +1,18 @@
+D:\Gleb\Документы\РФиКТ 3к\C#\Car Rental\CarRental_FApp\CarRental_CLibrary\bin\Debug\CarRental_CLibrary.dll
+D:\Gleb\Документы\РФиКТ 3к\C#\Car Rental\CarRental_FApp\CarRental_CLibrary\bin\Debug\CarRental_CLibrary.pdb
+D:\Gleb\Документы\РФиКТ 3к\C#\Car Rental\CarRental_FApp\CarRental_CLibrary\obj\Debug\CarRental_CLibrary.csprojResolveAssemblyReference.cache
+D:\Gleb\Документы\РФиКТ 3к\C#\Car Rental\CarRental_FApp\CarRental_CLibrary\obj\Debug\CarRental_CLibrary.csproj.CoreCompileInputs.cache
+D:\Gleb\Документы\РФиКТ 3к\C#\Car Rental\CarRental_FApp\CarRental_CLibrary\obj\Debug\CarRental_CLibrary.dll
+D:\Gleb\Документы\РФиКТ 3к\C#\Car Rental\CarRental_FApp\CarRental_CLibrary\obj\Debug\CarRental_CLibrary.pdb
+E:\учеба!!!!!!\CarRental\CarRental_FApp v0.8.0.1\CarRental_CLibrary\bin\Debug\CarRental_CLibrary.dll
+E:\учеба!!!!!!\CarRental\CarRental_FApp v0.8.0.1\CarRental_CLibrary\bin\Debug\CarRental_CLibrary.pdb
+E:\учеба!!!!!!\CarRental\CarRental_FApp v0.8.0.1\CarRental_CLibrary\obj\Debug\CarRental_CLibrary.csprojResolveAssemblyReference.cache
+E:\учеба!!!!!!\CarRental\CarRental_FApp v0.8.0.1\CarRental_CLibrary\obj\Debug\CarRental_CLibrary.csproj.CoreCompileInputs.cache
+E:\учеба!!!!!!\CarRental\CarRental_FApp v0.8.0.1\CarRental_CLibrary\obj\Debug\CarRental_CLibrary.dll
+E:\учеба!!!!!!\CarRental\CarRental_FApp v0.8.0.1\CarRental_CLibrary\obj\Debug\CarRental_CLibrary.pdb
+E:\учеба!!!!!!\CarRental наполовину\CarRental_FApp v0.8.0.1\CarRental_CLibrary\bin\Debug\CarRental_CLibrary.dll
+E:\учеба!!!!!!\CarRental наполовину\CarRental_FApp v0.8.0.1\CarRental_CLibrary\bin\Debug\CarRental_CLibrary.pdb
+E:\учеба!!!!!!\CarRental наполовину\CarRental_FApp v0.8.0.1\CarRental_CLibrary\obj\Debug\CarRental_CLibrary.csprojResolveAssemblyReference.cache
+E:\учеба!!!!!!\CarRental наполовину\CarRental_FApp v0.8.0.1\CarRental_CLibrary\obj\Debug\CarRental_CLibrary.csproj.CoreCompileInputs.cache
+E:\учеба!!!!!!\CarRental наполовину\CarRental_FApp v0.8.0.1\CarRental_CLibrary\obj\Debug\CarRental_CLibrary.dll
+E:\учеба!!!!!!\CarRental наполовину\CarRental_FApp v0.8.0.1\CarRental_CLibrary\obj\Debug\CarRental_CLibrary.pdb

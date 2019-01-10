@@ -1,0 +1,6 @@
+E:\учеба!!!!!!\CarRental наполовину\CarRental_FApp v0.8.0.1\CarRental_CLibrary\obj\Debug\FilmRental_CLibrary.csprojResolveAssemblyReference.cache
+E:\учеба!!!!!!\CarRental наполовину\CarRental_FApp v0.8.0.1\CarRental_CLibrary\obj\Debug\FilmRental_CLibrary.csproj.CoreCompileInputs.cache
+E:\учеба!!!!!!\CarRental наполовину\CarRental_FApp v0.8.0.1\CarRental_CLibrary\bin\Debug\FilmRental_CLibrary.dll
+E:\учеба!!!!!!\CarRental наполовину\CarRental_FApp v0.8.0.1\CarRental_CLibrary\bin\Debug\FilmRental_CLibrary.pdb
+E:\учеба!!!!!!\CarRental наполовину\CarRental_FApp v0.8.0.1\CarRental_CLibrary\obj\Debug\FilmRental_CLibrary.dll
+E:\учеба!!!!!!\CarRental наполовину\CarRental_FApp v0.8.0.1\CarRental_CLibrary\obj\Debug\FilmRental_CLibrary.pdb
