@@ -65,7 +65,7 @@
             this.PNumTextBox.Name = "PNumTextBox";
             this.PNumTextBox.Size = new System.Drawing.Size(138, 20);
             this.PNumTextBox.TabIndex = 14;
-            this.PNumTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.PNumTextBox_KeyPress);
+            this.PNumTextBox.Leave += new System.EventHandler(this.PNumTextBox_Leave);
             // 
             // label7
             // 
@@ -94,7 +94,7 @@
             this.AgeTextBox.Name = "AgeTextBox";
             this.AgeTextBox.Size = new System.Drawing.Size(138, 20);
             this.AgeTextBox.TabIndex = 11;
-            this.AgeTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.AgeTextBox_KeyPress);
+            this.AgeTextBox.Leave += new System.EventHandler(this.AgeTextBox_Leave);
             // 
             // LimitDateTimePicker
             // 
@@ -132,7 +132,7 @@
             this.NameTextBox3.Name = "NameTextBox3";
             this.NameTextBox3.Size = new System.Drawing.Size(138, 20);
             this.NameTextBox3.TabIndex = 10;
-            this.NameTextBox3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.NameTextBox3_KeyPress);
+            this.NameTextBox3.Leave += new System.EventHandler(this.NameTextBox3_Leave);
             // 
             // NameTextBox2
             // 
@@ -142,7 +142,7 @@
             this.NameTextBox2.Size = new System.Drawing.Size(138, 20);
             this.NameTextBox2.TabIndex = 9;
             this.NameTextBox2.TextChanged += new System.EventHandler(this.NameTextBox2_TextChanged);
-            this.NameTextBox2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.NameTextBox2_KeyPress);
+            this.NameTextBox2.Leave += new System.EventHandler(this.NameTextBox2_Leave);
             // 
             // NameTextBox1
             // 
@@ -151,7 +151,8 @@
             this.NameTextBox1.Name = "NameTextBox1";
             this.NameTextBox1.Size = new System.Drawing.Size(138, 20);
             this.NameTextBox1.TabIndex = 8;
-            this.NameTextBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.NameTextBox1_KeyPress);
+            this.NameTextBox1.TextChanged += new System.EventHandler(this.NameTextBox1_TextChanged);
+            this.NameTextBox1.Leave += new System.EventHandler(this.NameTextBox1_Leave);
             // 
             // RegCButton
             // 

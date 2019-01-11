@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 using FilmRental_CLibrary;
+using System.Text.RegularExpressions;
 
 namespace FilmRental_FApp.FilmRental_Forms
 {
@@ -10,11 +11,6 @@ namespace FilmRental_FApp.FilmRental_Forms
         Storage _storage = new Storage();
         Validator _validator = new Validator();
 
-        //public RegCForm(CashierLogForm cashierLogForm)
-        //{
-        //    InitializeComponent();
-        //}
-
         public RegCForm(MainMenuForm mainMenu)
         {
             InitializeComponent();
@@ -23,65 +19,61 @@ namespace FilmRental_FApp.FilmRental_Forms
         }
 
         //Обработка записи в поля ввода
-        private void NameTextBox1_KeyPress(object sender, KeyPressEventArgs e)
+        private void NameTextBox1_Leave(object sender, EventArgs e)
         {
-            if ((!char.IsLetter(e.KeyChar) && !char.IsControl(e.KeyChar)) ||
-                (NameTextBox1.TextLength == 0 && char.IsLower(e.KeyChar)) ||
-                (NameTextBox1.TextLength > 0 && !char.IsLower(e.KeyChar) && !char.IsControl(e.KeyChar)))
+            string zipCodePattern1 = @"^[A-Z]{1}[a-z]*$";
+            bool isZipValid = Regex.IsMatch(NameTextBox1.Text, zipCodePattern1);
+            if (!isZipValid)
             {
-                e.Handled = true;
-                TextErrorProvider.SetError(NameTextBox1, "Недопустимый символ!");
+                MessageBox.Show("Please enter a right first name");
             }
             else
                 TextErrorProvider.Clear();
         }
 
-        private void NameTextBox2_KeyPress(object sender, KeyPressEventArgs e)
+        private void NameTextBox2_Leave(object sender, EventArgs e)
         {
-            if ((!char.IsLetter(e.KeyChar) && !char.IsControl(e.KeyChar)) ||
-                (NameTextBox2.TextLength == 0 && char.IsLower(e.KeyChar)) ||
-                (NameTextBox2.TextLength > 0 && !char.IsLower(e.KeyChar) && !char.IsControl(e.KeyChar)))
+            string zipCodePattern2 = @"^[A-Z]{1}[a-z]*$";
+            bool isZipValid = Regex.IsMatch(NameTextBox2.Text, zipCodePattern2);
+            if (!isZipValid)
             {
-                e.Handled = true;
-                TextErrorProvider.SetError(NameTextBox2, "Недопустимый символ!");
+                MessageBox.Show("Please enter a right second name");
             }
             else
                 TextErrorProvider.Clear();
         }
 
-        private void NameTextBox3_KeyPress(object sender, KeyPressEventArgs e)
+        private void NameTextBox3_Leave(object sender, EventArgs e)
         {
-            if ((!char.IsLetter(e.KeyChar) && !char.IsControl(e.KeyChar)) ||
-                (NameTextBox3.TextLength == 0 && char.IsLower(e.KeyChar)) ||
-                (NameTextBox3.TextLength > 0 && !char.IsLower(e.KeyChar) && !char.IsControl(e.KeyChar)))
+            string zipCodePattern3 = @"^[A-Z]{1}[a-z]*$";
+            bool isZipValid = Regex.IsMatch(NameTextBox3.Text, zipCodePattern3);
+            if (!isZipValid)
             {
-                e.Handled = true;
-                TextErrorProvider.SetError(NameTextBox3, "Недопустимый символ!");
+                MessageBox.Show("Please enter a right third name");
             }
             else
                 TextErrorProvider.Clear();
         }
 
-        private void PNumTextBox_KeyPress(object sender, KeyPressEventArgs e)
+        private void PNumTextBox_Leave(object sender, EventArgs e)
         {
-            if ((!char.IsNumber(e.KeyChar) && PNumTextBox.TextLength > 1 && PNumTextBox.TextLength < 9 && !char.IsControl(e.KeyChar)) ||
-               (PNumTextBox.TextLength < 2 && !char.IsLetter(e.KeyChar) && !char.IsControl(e.KeyChar)) ||
-               (PNumTextBox.TextLength < 2 && char.IsLower(e.KeyChar) && !char.IsControl(e.KeyChar)) ||
-               (PNumTextBox.TextLength > 8 && !char.IsControl(e.KeyChar)))
+            string zipCodePattern = @"^[A-Z]{2}[0-9]{7}$";
+            bool isZipValid = Regex.IsMatch(PNumTextBox.Text, zipCodePattern);
+            if (!isZipValid)
             {
-                e.Handled = true;
-                TextErrorProvider.SetError(PNumTextBox, "Недопустимый символ!");
+                MessageBox.Show("Please enter a right first name");
             }
             else
                 TextErrorProvider.Clear();
         }
 
-        private void AgeTextBox_KeyPress(object sender, KeyPressEventArgs e)
+        private void AgeTextBox_Leave(object sender, EventArgs e)
         {
-            if (!char.IsNumber(e.KeyChar) && !char.IsControl(e.KeyChar))
+            string zipCodePattern = @"^[0-9]{2}$";
+            bool isZipValid = Regex.IsMatch(AgeTextBox.Text, zipCodePattern);
+            if (!isZipValid)
             {
-                e.Handled = true;
-                TextErrorProvider.SetError(AgeTextBox, "Недопустимый символ!");
+                MessageBox.Show("Please enter a right age");
             }
             else
                 TextErrorProvider.Clear();
@@ -126,6 +118,11 @@ namespace FilmRental_FApp.FilmRental_Forms
         }
 
         private void NameTextBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void NameTextBox1_TextChanged(object sender, EventArgs e)
         {
 
         }

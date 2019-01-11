@@ -11,16 +11,16 @@ namespace FilmRental_CLibrary
         public string Producer { get; set; }
         public int Year { get; set; }
         public string Country { get; set; }
-        public double Eighteen { get; set; }
-        public double DVD { get; set; }
-        public double Cassette { get; set; }
+        public string Eighteen { get; set; }
+        public int DVD { get; set; }
+        public int Cassette { get; set; }
         public Image Photo { get; set; }
         public double Price { get; set; }
         public double Peny { get; set; }
         public string Category { get; set; }
         public bool Available { get; set; }
 
-        public Film(Storage storage, string title, string producer, int year, string country,   double eighteen, double dvd, double cassette, Image photo, double price, double peny, string category, bool available)
+        public Film(Storage storage, string title, string producer, int year, string country,   string eighteen, int dvd, int cassette, Image photo, double price, double peny, string category, bool available)
         {
             //FilmID = GenID(storage);
             Title = title;

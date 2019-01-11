@@ -14,8 +14,6 @@ namespace FilmRental_CLibrary
             ListClient = new List<Client>();
             ListFilm = new List<Film>();
             ListCategory = new List<Category>();
-
-         
         }
 
         public List<Client> GetClientList()
@@ -28,7 +26,7 @@ namespace FilmRental_CLibrary
             ListClient = listC;
         }
 
-        public void Add(Client element)
+        public void Add (Client element)
         {
             ListClient.Add(element);
         }  

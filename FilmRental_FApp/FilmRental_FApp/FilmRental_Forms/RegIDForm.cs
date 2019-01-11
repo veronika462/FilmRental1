@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 using FilmRental_CLibrary;
+using System.Text.RegularExpressions;
 
 namespace FilmRental_FApp.FilmRental_Forms
 {
@@ -32,27 +33,25 @@ namespace FilmRental_FApp.FilmRental_Forms
         }
 
         //Обработка записи в поля ввода
-        private void BTypeTextBox_KeyPress(object sender, KeyPressEventArgs e)
+        private void BTypeTextBox_Leave(object sender, EventArgs e)
         {
-            if ((!char.IsLetter(e.KeyChar) && !char.IsControl(e.KeyChar)) ||
-                (BTypeTextBox.TextLength == 0 && char.IsLower(e.KeyChar)) ||
-                (BTypeTextBox.TextLength > 0 && !char.IsLower(e.KeyChar) && !char.IsControl(e.KeyChar)))
+            string zipCodePattern3 = @"^[A-Z]{1}[a-z]*$";
+            bool isZipValid = Regex.IsMatch(BTypeTextBox.Text, zipCodePattern3);
+            if (!isZipValid)
             {
-                e.Handled = true;
-                TextErrorProvider.SetError(BTypeTextBox, "Недопустимый символ!");
+                MessageBox.Show("Please enter a right category");
             }
             else
                 TextErrorProvider.Clear();
         }
 
-        private void CNumTextBox_KeyPress(object sender, KeyPressEventArgs e)
+        private void CNumTextBox_Leave(object sender, EventArgs e)
         {
-            if ((CNumTextBox.TextLength < 2 && !char.IsLetter(e.KeyChar) && !char.IsControl(e.KeyChar)) ||
-                (CNumTextBox.TextLength < 2 && char.IsLower(e.KeyChar) && !char.IsControl(e.KeyChar)) ||
-                (CNumTextBox.TextLength == 2 && !char.IsControl(e.KeyChar)))
+            string zipCodePattern3 = @"^[A-Z]{2}$";
+            bool isZipValid = Regex.IsMatch(CNumTextBox.Text, zipCodePattern3);
+            if (!isZipValid)
             {
-                e.Handled = true;
-                TextErrorProvider.SetError(CNumTextBox, "Недопустимый символ!");
+                MessageBox.Show("Please enter a right code");
             }
             else
                 TextErrorProvider.Clear();

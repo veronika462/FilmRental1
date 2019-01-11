@@ -213,22 +213,22 @@ namespace FilmRental_FApp.FilmRental_Forms
         {
             if (YearRadioButton.Checked)
             {
-                string zipCodePattern = @"^[A-Z]{1}[a-z]*$";
+                string zipCodePattern = @"^[0-9]{4}$";
                 bool isZipValid = Regex.IsMatch(SearchTextBox.Text, zipCodePattern);
                 if (!isZipValid)
                 {
-                    MessageBox.Show("Please enter a valid zip code");
+                    MessageBox.Show("Please enter a right year");
                 }
                 else
                     TextErrorProvider.Clear();
             }
             else if (INumRadioButton.Checked)
             {
-                string zipCodePattern1 = @"^[A-Z]{1}[a-z]*$";
+                string zipCodePattern1 = @"^[0-9]{2}$";
                 bool isZipValid = Regex.IsMatch(SearchTextBox.Text, zipCodePattern1);
                 if (!isZipValid)
                 {
-                    MessageBox.Show("Please enter a valid zip code");
+                    MessageBox.Show("Please enter a right nimber");
                 }
                 else
                     TextErrorProvider.Clear();
@@ -239,18 +239,18 @@ namespace FilmRental_FApp.FilmRental_Forms
                 bool isZipValid = Regex.IsMatch(SearchTextBox.Text, zipCodePattern2);
                 if (!isZipValid)
                 {
-                    MessageBox.Show("Please enter a valid zip code");
+                    MessageBox.Show("Please enter a right category");
                 }
                 else
                     TextErrorProvider.Clear();
             }
-            else
-            {
+            else  //Title of film
+            {   
                 string zipCodePattern3 = @"^[A-Z]{1}[a-z]*$";
                 bool isZipValid = Regex.IsMatch(SearchTextBox.Text, zipCodePattern3);
                 if (!isZipValid)
                 {
-                    MessageBox.Show("Please enter a valid zip code");
+                    MessageBox.Show("Please enter a right name");
                 }
                 else
                     TextErrorProvider.Clear();

@@ -116,7 +116,7 @@ namespace FilmRental_FApp.FilmRental_Forms
                 bool isZipValid = Regex.IsMatch(SearchTextBox.Text, zipCodePattern);
                 if (!isZipValid)
                 {
-                MessageBox.Show("Please enter a valid zip code");
+                MessageBox.Show("Please enter a right first name");
                 }
                 else
                     TextErrorProvider.Clear();
@@ -127,7 +127,7 @@ namespace FilmRental_FApp.FilmRental_Forms
                 bool isZipValid = Regex.IsMatch(SearchTextBox.Text, zipCodePattern1);
                 if (!isZipValid)
                 {
-                    MessageBox.Show("Please enter a valid zip code");
+                    MessageBox.Show("Please enter a right passport ID");
                 }
                 else
                     TextErrorProvider.Clear();

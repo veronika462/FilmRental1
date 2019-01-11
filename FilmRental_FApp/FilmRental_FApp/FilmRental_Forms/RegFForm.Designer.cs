@@ -248,7 +248,7 @@ namespace FilmRental_FApp.FilmRental_Forms
             this.TitleTextBox.Size = new System.Drawing.Size(87, 20);
             this.TitleTextBox.TabIndex = 16;
             this.TitleTextBox.TextChanged += new System.EventHandler(this.TitleTextBox_TextChanged);
-            this.TitleTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TitleTextBox_KeyPress);
+            this.TitleTextBox.Leave += new System.EventHandler(this.TitleTextBox_Leave);
             // 
             // ProducerTextBox
             // 
@@ -258,7 +258,7 @@ namespace FilmRental_FApp.FilmRental_Forms
             this.ProducerTextBox.Size = new System.Drawing.Size(87, 20);
             this.ProducerTextBox.TabIndex = 17;
             this.ProducerTextBox.TextChanged += new System.EventHandler(this.ProducerTextBox_TextChanged);
-            this.ProducerTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ProducerTextBox_KeyPress);
+            this.ProducerTextBox.Leave += new System.EventHandler(this.ProducerTextBox_Leave);
             // 
             // YearTextBox
             // 
@@ -267,7 +267,7 @@ namespace FilmRental_FApp.FilmRental_Forms
             this.YearTextBox.Name = "YearTextBox";
             this.YearTextBox.Size = new System.Drawing.Size(87, 20);
             this.YearTextBox.TabIndex = 18;
-            this.YearTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.YearTextBox_KeyPress);
+            this.YearTextBox.Leave += new System.EventHandler(this.YearTextBox_Leave);
             // 
             // CountryTextBox
             // 
@@ -277,7 +277,7 @@ namespace FilmRental_FApp.FilmRental_Forms
             this.CountryTextBox.Size = new System.Drawing.Size(87, 20);
             this.CountryTextBox.TabIndex = 19;
             this.CountryTextBox.TextChanged += new System.EventHandler(this.CountryTextBox_TextChanged);
-            this.CountryTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.CountryTextBox_KeyPress);
+            this.CountryTextBox.Leave += new System.EventHandler(this.CountryTextBox_Leave);
             // 
             // EighteenTextBox
             // 
@@ -287,7 +287,7 @@ namespace FilmRental_FApp.FilmRental_Forms
             this.EighteenTextBox.Size = new System.Drawing.Size(158, 20);
             this.EighteenTextBox.TabIndex = 20;
             this.EighteenTextBox.TextChanged += new System.EventHandler(this.EighteenTextBox_TextChanged);
-            this.EighteenTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.EighteenTextBox_KeyPress);
+            this.EighteenTextBox.Leave += new System.EventHandler(this.EighteenTextBox_Leave);
             // 
             // DVDTextBox
             // 
@@ -296,7 +296,7 @@ namespace FilmRental_FApp.FilmRental_Forms
             this.DVDTextBox.Name = "DVDTextBox";
             this.DVDTextBox.Size = new System.Drawing.Size(158, 20);
             this.DVDTextBox.TabIndex = 21;
-            this.DVDTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.DVDTextBox_KeyPress);
+            this.DVDTextBox.Leave += new System.EventHandler(this.DVDTextBox_Leave);
             // 
             // CassetteTextBox
             // 
@@ -305,7 +305,7 @@ namespace FilmRental_FApp.FilmRental_Forms
             this.CassetteTextBox.Name = "CassetteTextBox";
             this.CassetteTextBox.Size = new System.Drawing.Size(158, 20);
             this.CassetteTextBox.TabIndex = 22;
-            this.CassetteTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.CassetteTextBox_KeyPress);
+            this.CassetteTextBox.Leave += new System.EventHandler(this.CassetteTextBox_Leave);
             // 
             // PriceTextBox
             // 
@@ -314,7 +314,7 @@ namespace FilmRental_FApp.FilmRental_Forms
             this.PriceTextBox.Name = "PriceTextBox";
             this.PriceTextBox.Size = new System.Drawing.Size(158, 20);
             this.PriceTextBox.TabIndex = 26;
-            this.PriceTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.PriceTextBox_KeyPress);
+            this.PriceTextBox.Leave += new System.EventHandler(this.PriceTextBox_Leave);
             // 
             // PenyTextBox
             // 
@@ -323,7 +323,7 @@ namespace FilmRental_FApp.FilmRental_Forms
             this.PenyTextBox.Name = "PenyTextBox";
             this.PenyTextBox.Size = new System.Drawing.Size(158, 20);
             this.PenyTextBox.TabIndex = 27;
-            this.PenyTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.PenyTextBox_KeyPress);
+            this.PenyTextBox.Leave += new System.EventHandler(this.PenyTextBox_Leave);
             // 
             // label13
             // 

@@ -102,7 +102,7 @@
             this.BTypeTextBox.Size = new System.Drawing.Size(100, 20);
             this.BTypeTextBox.TabIndex = 3;
             this.BTypeTextBox.TextChanged += new System.EventHandler(this.BTypeTextBox_TextChanged);
-            this.BTypeTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.BTypeTextBox_KeyPress);
+            this.BTypeTextBox.Leave += new System.EventHandler(this.BTypeTextBox_Leave);
             // 
             // CNumTextBox
             // 
@@ -112,7 +112,7 @@
             this.CNumTextBox.Size = new System.Drawing.Size(100, 20);
             this.CNumTextBox.TabIndex = 4;
             this.CNumTextBox.TextChanged += new System.EventHandler(this.CNumTextBox_TextChanged);
-            this.CNumTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.CNumTextBox_KeyPress);
+            this.CNumTextBox.Leave += new System.EventHandler(this.CNumTextBox_Leave);
             // 
             // TextErrorProvider
             // 
